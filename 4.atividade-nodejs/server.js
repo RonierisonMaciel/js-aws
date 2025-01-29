@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+app.use(express.json());
 
 // Rota principal
 app.get('/', (req, res) => {
@@ -14,6 +15,12 @@ app.get('/sobre', (req, res) => {
 // Rota de contato
 app.get('/contato', (req, res) => {
     res.send('<h1>Contato</h1><p>Entre em contato conosco pelo <a href="mailto:roni@gmail.com">email</a>');
+});
+
+// Rota dos dados
+app.post('/dados', (req, res) => {
+    const { nome, idade, email } = req.body;
+    res.send(`O seu nome é ${nome} você tem ${idade} anos e seu email é ${email}`);
 });
 
 const PORT = 3000;
