@@ -8,5 +8,20 @@
     "id": 2,
     "titulo": "Aprenda Go",
     "status": true
+  },
+  {
+    "id": 3,
+    "titulo": "Aprenda Java",
+    "status": false
+  },
+  {
+    "id": 5,
+    "titulo": "Aprenda SQL",
+    "status": true
+  },
+  {
+    "id": 6,
+    "titulo": "Aprenda Rust",
+    "status": true
   }
 ]
